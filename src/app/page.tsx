@@ -31,7 +31,7 @@ export default function Home() {
               <div className='mx-auto max-w-6xl px-6 lg:px-8'>
                 <div className='mt-16 flow-root sm:mt-24'>
                   <div className='-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4'>
-                    <Image alt="PARCHMENT-LANDING-IMAGE" src="/dashboard-preview.jpg" width={1364} height={866} quality={100} className='rounded-md bg-white p-2 sm:p-8 md:p-20 shadow-2xl ring-1 ring-gray-900/10' />
+                    <Image alt="PARCHMENT-LANDING-IMAGE" src="/dashboard-preview.jpg" width={1364} height={866} quality={100} className='grainy rounded-md bg-white p-2 sm:p-8 md:p-20 shadow-2xl ring-1 ring-gray-900/10' />
                   </div>
                 </div>
               </div>
@@ -93,6 +93,13 @@ export default function Home() {
             </div>
           </li>
         </ol>
+        <div className='mx-auto max-w-6xl px-6 lg:px-8'>
+                <div className='mt-16 flow-root sm:mt-24'>
+                  <div className='-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4'>
+                    <Image alt="PARCHMENT-LANDING-IMAGE" src="/file-upload-preview.jpg" width={1419} height={732} quality={100} className='grainy rounded-md bg-white p-2 sm:p-8 md:p-20 shadow-2xl ring-1 ring-gray-900/10' />
+                  </div>
+                </div>
+              </div>
       </div>
     </>
   )
