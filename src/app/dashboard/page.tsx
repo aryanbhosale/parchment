@@ -18,4 +18,4 @@ const Page = async () => {
 
 export default Page
 
-// http://localhost:3000/localhost:3000/api/trpc/authCallback?batch=1&input=%7B%7D 2:21:56 time
+//2:21:56 time
