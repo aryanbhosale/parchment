@@ -26,7 +26,8 @@ export const appRouter = router({
             })
         }
         return { success: true }
-    })
+    }),
+    getUserFiles: 
 });
 
 // Export type router type signature,
