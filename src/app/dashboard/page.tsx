@@ -17,5 +17,3 @@ const Page = async () => {
 }
 
 export default Page
-
-//2:21:56 time
