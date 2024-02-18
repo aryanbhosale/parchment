@@ -12,8 +12,8 @@ export const POST = async (req: NextRequest) => {
     //endpoint for asking a question to the document
     const body = await req.json()
     const { getUser } = getKindeServerSession()
-    const user = getUser()
-    const { id: userId } = user
+    const user = await getUser()
+    const userId = user?.id
     if(!userId) {
         return new Response("Unauthorized", { status: 401 })
     }
@@ -108,6 +108,5 @@ export const POST = async (req: NextRequest) => {
             })
         }
     })
-    //72632
     return new StreamingTextResponse(stream)
 }
