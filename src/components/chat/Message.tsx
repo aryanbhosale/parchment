@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { ExtendedMessage } from "@/types/message";
-import React from "react";
+import React, { forwardRef } from "react";
 import { Icons } from "../Icons";
 import ReactMarkdown from "react-markdown";
 import { format } from "date-fns";
@@ -10,9 +10,10 @@ interface MessageProps {
   isNextMessageSamePerson: boolean;
 }
 
-const Message = ({ message, isNextMessageSamePerson }: MessageProps) => {
+const Message = forwardRef<HTMLDivElement, MessageProps>(({ message, isNextMessageSamePerson }, ref) => {
   return (
     <div
+      ref={ref}
       className={cn("flex items-end", {
         "justify-end": message.isUserMessage,
       })}
@@ -63,17 +64,17 @@ const Message = ({ message, isNextMessageSamePerson }: MessageProps) => {
           {message.id !== "loading-message" ? (
             <div
               className={cn("text-xs select-none mt-2 w-full text-right", {
-                "text-zinc-100": !message.isUserMessage,
+                "text-red-200": !message.isUserMessage,
                 "text-blue-200": message.isUserMessage
               })}
             >
-              {format(new Date(message.createdAt), "HH:mm")}
+              {format(new Date(message.createdAt), "dd MMM, yyyy - HH:mm")}
             </div>
           ) : null}
         </div>
       </div>
     </div>
   );
-};
+})
 
 export default Message;
