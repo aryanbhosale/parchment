@@ -48,7 +48,7 @@ export default function Home() {
               From Upload to Unleash: Quick and Easy!
             </h2>
             <p className='mt-4 text-lg text-gray-400 '>
-              Parchment's user-friendly interface ensures you can dive into meaningful conversations with your PDFs in minutes - simplicity, redefined!
+              Parchment&apos;s user-friendly interface ensures you can dive into meaningful conversations with your PDFs in minutes - simplicity, redefined!
             </p>
           </div>
         </div>
@@ -62,7 +62,7 @@ export default function Home() {
                 Craft Your Portal
               </span>
               <span className='mt-2 text-zinc-400'>
-                Opt for a free initiation or embrace the limitless possibilities of our <Link href="/pricing" className='text-blue-700 underline underline-offset-2'>pro plan</Link> - the gateway to boundless dialogues awaits!" 
+                Opt for a free initiation or embrace the limitless possibilities of our <Link href="/pricing" className='text-blue-700 underline underline-offset-2'>pro plan</Link> - the gateway to boundless dialogues awaits!
               </span>
             </div>
           </li>

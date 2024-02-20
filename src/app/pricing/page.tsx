@@ -77,7 +77,7 @@ const page = async () => {
         <div className="mx-auto mb-10 sm:max-w-lg">
           <h1 className="text-6xl font-bold sm:text-7xl">Pricing</h1>
           <p className="mt-5 text-gray-600 sm:text-lg">
-            Explore the Perfect Plan: From First-Timers to Power Users, We've
+            Explore the Perfect Plan: From First-Timers to Power Users, We&apos;ve
             Tailored Options for Every Journey.
           </p>
         </div>
@@ -165,7 +165,7 @@ const page = async () => {
                       </li>
                     ))}
                   </ul>
-                  <div className="border-t border-gray-200" />
+                  <div className="border-t border-gray-600" />
                   <div className="p-5">
                     {plan === "Free" ? (
                       <Link href={user ? "/dashboard" : "/sign-in"} className={buttonVariants({
