@@ -20,33 +20,48 @@ const Navbar = async () => {
           </Link>
 
           <div className="hidden items-center space-x-4 sm:flex">
-            <>
-              <Link
-                href="/pricing"
-                className={buttonVariants({
-                  variant: "ghost",
-                  size: "sm",
-                })}
-              >
-                Pricing
-              </Link>
+            {!user ?
+              (<>
+                <Link
+                  href="/pricing"
+                  className={buttonVariants({
+                    variant: "ghost",
+                    size: "sm",
+                  })}
+                >
+                  Pricing
+                </Link>
 
-              <LoginLink
-                className={buttonVariants({
-                  variant: "ghost",
-                  size: "sm",
-                })}
-              >
-                Sign in
-              </LoginLink>
-              <RegisterLink
-                className={buttonVariants({
-                  size: "sm",
-                })}
-              >
-                Dive in <ArrowRight className="ml-1.5 h-5 w-5" />
-              </RegisterLink>
-            </>
+                <LoginLink
+                  className={buttonVariants({
+                    variant: "ghost",
+                    size: "sm",
+                  })}
+                >
+                  Sign in
+                </LoginLink>
+                <RegisterLink
+                  className={buttonVariants({
+                    size: "sm",
+                  })}
+                >
+                  Dive in <ArrowRight className="ml-1.5 h-5 w-5" />
+                </RegisterLink>
+              </>) : (
+                <>
+                  <Link
+                  href="/dashboard"
+                  className={buttonVariants({
+                    variant: "ghost",
+                    size: "sm",
+                  })}
+                >
+                  Dashboard
+                </Link>
+                <UserAccountNav />
+                </>
+              )
+            }
           </div>
         </div>
       </MaxWidthWrapper>
