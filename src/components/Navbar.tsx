@@ -7,6 +7,7 @@ import {
 } from "@kinde-oss/kinde-auth-nextjs/components";
 import { ArrowRight } from "lucide-react";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
+import UserAccountNav from "./UserAccountNav";
 
 const Navbar = async () => {
   const { getUser } = getKindeServerSession();
@@ -58,7 +59,12 @@ const Navbar = async () => {
                 >
                   Dashboard
                 </Link>
-                <UserAccountNav />
+                <UserAccountNav name={
+                  !user.given_name || !user.family_name ? "Your Account" : `${user.given_name} ${user.family_name}`
+                }
+                email={user.email || ""}
+                imageUrl={user.picture || ""}
+                />
                 </>
               )
             }

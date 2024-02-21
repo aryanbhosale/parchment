@@ -42,7 +42,6 @@ export const ChatContextProvider = ({ fileId, children }: Props) => {
       return response.body;
     },
     onMutate: async ({ message }) => {
-      //83226
       backupMessage.current = message;
       setMessage("");
       //first part
