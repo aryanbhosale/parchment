@@ -8,6 +8,7 @@ import {
 import { ArrowRight } from "lucide-react";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import UserAccountNav from "./UserAccountNav";
+import MobileNav from "./MobileNav";
 
 const Navbar = async () => {
   const { getUser } = getKindeServerSession();
@@ -19,6 +20,8 @@ const Navbar = async () => {
           <Link href="/" className="flex z-48 font-semibold text-2xl">
             parchment.
           </Link>
+
+    <MobileNav isAuth={!!user} />
 
           <div className="hidden items-center space-x-4 sm:flex">
             {!user ?
