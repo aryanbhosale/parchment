@@ -37,6 +37,8 @@ export const ourFileRouter = {
             const pageLevelDocs = await loader.load()
             const pagesAmt = pageLevelDocs.length
 
+//time 10:51:48            if()
+
             //vectorize & index the doc
             const pinecone = await getPineconeClient();
             const pineconeIndex = pinecone.Index("parchment")

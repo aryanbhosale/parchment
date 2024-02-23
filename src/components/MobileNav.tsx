@@ -18,10 +18,10 @@ const closeOnCurrent = (href: string) => {
     
   return (
     <div className='sm:hidden'>
-        <MenuIcon onClick={toggleOpen} className='relative z-50 h-5 w-5 text-zinc-300' />
+        <MenuIcon onClick={toggleOpen} className='relative z-50 h-5 w-5 text-zinc-200' />
         {isOpen ? (
             <div className='fixed animate-in slide-in-from-top-5 fade-in-20 inset-0 z-0 w-full'>
-                <ul className='absolute bg-gray-700 border-b border-zinc-200 shadow-xl grid w-full gap-3 px-10 pt-20 pb-8'>
+                <ul className='absolute bg-gray-900 border-b border-zinc-800 shadow-xl grid w-full gap-3 px-10 pt-20 pb-8'>
                     {!isAuth ? (
                         <>
                             <li>
@@ -29,21 +29,21 @@ const closeOnCurrent = (href: string) => {
                             </li>
                             <li className='my-3 h-px w-full bg-gray-700' />
                             <li>
-                                <Link onClick={() => closeOnCurrent('/sign-in')} className='flex items-center w-full font-semibold' href={"/sign-in"}>Sign In<ArrowRight className='ml-2 h-5 w-5' /></Link>
+                                <Link onClick={() => closeOnCurrent('/sign-in')} className='flex items-center w-full font-semibold' href={"/sign-in"}>Sign In</Link>
                             </li>
                             <li className='my-3 h-px w-full bg-gray-700' />
                             <li>
-                                <Link onClick={() => closeOnCurrent('/pricing')} className='flex items-center w-full font-semibold' href={"/pricing"}>Pricing<ArrowRight className='ml-2 h-5 w-5' /></Link>
+                                <Link onClick={() => closeOnCurrent('/pricing')} className='flex items-center w-full font-semibold' href={"/pricing"}>Pricing</Link>
                             </li>
                         </>
                     ) : (
                         <>
                             <li>
-                                <Link onClick={() => closeOnCurrent('/dashboard')} className='flex items-center w-full font-semibold' href={"/dashboard"}>Dashboard<ArrowRight className='ml-2 h-5 w-5' /></Link>
+                                <Link onClick={() => closeOnCurrent('/dashboard')} className='flex items-center w-full font-semibold' href={"/dashboard"}>Dashboard</Link>
                             </li>
                             <li className='my-3 h-px w-full bg-gray-700' />
                             <li>
-                                <Link className='flex items-center w-full font-semibold' href={"/sign-out"}>Logout<ArrowRight className='ml-2 h-5 w-5' /></Link>
+                                <Link className='flex items-center w-full font-semibold' href={"/sign-out"}>Logout</Link>
                             </li>
                         </>
                     )}
