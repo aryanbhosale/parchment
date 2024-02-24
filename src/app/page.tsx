@@ -10,7 +10,7 @@ export default function Home() {
       <MaxWidthWrapper className='mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center'>
         <div className='mx-auto cursor-pointer mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/80'>
           <p className='text-sm font-semibold text-gray-700'>
-            Parchment is now public!
+            Parchment Inc.
           </p>
         </div>
         <h1 className='max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl'>Where <span className='bg-gradient-to-br from-sky-500 to-blue-700 bg-clip-text text-transparent'>Text</span> Meets <span className='bg-gradient-to-r from-cyan-700 to-indigo-600 bg-clip-text text-transparent'>Talk</span> - Your <span className='bg-gradient-to-r from-fuchsia-600 to-pink-600 bg-clip-text text-transparent'>Documents</span> , Your <span className='bg-gradient-to-br from-rose-600 to-sky-500 bg-clip-text text-transparent'>Dialogue</span>.</h1>
@@ -18,7 +18,7 @@ export default function Home() {
         <Link className={buttonVariants({
           size: "lg",
           className: "mt-5 "
-        })} href="/dashboard" target='_blank'>
+        })} href="/dashboard">
           Dive In <ArrowRight className='ml-2 h-5 w-5' />
         </Link>
       </MaxWidthWrapper>
@@ -31,7 +31,7 @@ export default function Home() {
               <div className='mx-auto max-w-6xl px-6 lg:px-8'>
                 <div className='mt-16 flow-root sm:mt-24'>
                   <div className='-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4'>
-                    <Image alt="PARCHMENT-LANDING-IMAGE" src="/dashboard-preview.jpg" width={1364} height={866} quality={100} className='grainy rounded-md bg-white p-2 sm:p-8 md:p-20 shadow-2xl ring-1 ring-gray-900/10' />
+                    <Image alt="PARCHMENT-LANDING-IMAGE" src="/dashboard-preview.png" width={1897} height={816} quality={100} className='grainy rounded-md bg-black p-2 sm:p-8 md:p-20 shadow-2xl ring-1 ring-gray-900/10' />
                   </div>
                 </div>
               </div>
@@ -96,7 +96,7 @@ export default function Home() {
         <div className='mx-auto max-w-6xl px-6 lg:px-8'>
                 <div className='mt-16 flow-root sm:mt-24'>
                   <div className='-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4'>
-                    <Image alt="PARCHMENT-LANDING-IMAGE" src="/file-upload-preview.jpg" width={1419} height={732} quality={100} className='grainy rounded-md bg-white p-2 sm:p-8 md:p-20 shadow-2xl ring-1 ring-gray-900/10' />
+                    <Image alt="PARCHMENT-LANDING-IMAGE" src="/file-upload-preview.png" width={1917} height={823} quality={100} className='grainy rounded-md bg-white p-2 sm:p-8 md:p-20 shadow-2xl ring-1 ring-gray-900/10' />
                   </div>
                 </div>
               </div>
