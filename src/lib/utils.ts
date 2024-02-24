@@ -19,7 +19,7 @@ export function absoluteUrl(path: string) {
 export function constructMetadata({
   title = "Parchment | Elevate Your Documents with Conversational Grace",
   description = "Discover a transformative way to engage with your documents at Parchment. Seamlessly converse with your PDFs and DOCX files, unlocking a new dimension of interactive possibilities. Elevate your document experience with Parchment's intuitive platform - where effortless conversations meet insightful exploration. Try it today!",
-  image = "/thumbnail.png",
+  image = absoluteUrl("/thumbnail.png"),
   icons = "/favicon.png",
   noIndex = false
 }: {

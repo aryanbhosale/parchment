@@ -30,6 +30,8 @@ const BillingForm = ({ subscriptionPlan }: BillingFormProps) => {
             }
         }
     })
+
+    console.log("PLAN: ", subscriptionPlan.name)
   return (
     <MaxWidthWrapper className='max-w-5xl'>
         <form className='mt-12' onSubmit={(e) => {
