@@ -72,7 +72,7 @@ export const appRouter = router({
         billing_address_collection: "required",
         line_items: [
             {
-                price: PLANS.find((plan) => plan.name === "Pro")?.price.priceIds.production,
+                price: PLANS.find((plan) => plan.name === "Pro")?.price.priceIds.test,
                 quantity: 1
             }
         ],
