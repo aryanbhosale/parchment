@@ -3,6 +3,7 @@ import { buttonVariants } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { RegisterLink } from '@kinde-oss/kinde-auth-nextjs/components'
 
 export default function Home() {
   
@@ -16,12 +17,13 @@ export default function Home() {
         </div>
         <h1 className='max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl'>Where <span className='bg-gradient-to-br from-sky-500 to-blue-700 bg-clip-text text-transparent'>Text</span> Meets <span className='bg-gradient-to-r from-cyan-700 to-indigo-600 bg-clip-text text-transparent'>Talk</span> - Your <span className='bg-gradient-to-r from-fuchsia-600 to-pink-600 bg-clip-text text-transparent'>Documents</span> , Your <span className='bg-gradient-to-br from-rose-600 to-sky-500 bg-clip-text text-transparent'>Dialogue</span>.</h1>
         <p className='mt-5 max-w-prose text-zinc-400 sm:text-xl text-base'>Parchment, your digital dialogue companion, transforms static documents into dynamic conversations. Seamlessly converse with any PDF or DOCX file by effortlessly uploading your document, and watch as Parchment unveils a new realm of interactive engagement through insightful questions and lively discussions.</p>
-        <Link className={buttonVariants({
-          size: "lg",
-          className: "mt-5 "
-        })} href="/dashboard">
-          Dive In <ArrowRight className='ml-2 h-5 w-5' />
-        </Link>
+        <RegisterLink
+                  className={buttonVariants({
+                    size: "sm",
+                  })}
+                >
+                  Dive in <ArrowRight className="ml-1.5 h-5 w-5" />
+                </RegisterLink>
       </MaxWidthWrapper>
       <div>
         <div className='relative isolate'>
